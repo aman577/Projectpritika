@@ -1076,7 +1076,7 @@
             </div>
         </div>  
         <div class="page2button">
-           <a href="about.htm">
+           <a href="#">
         <button>VIEW OUR MENU</button>
     </a> 
                
