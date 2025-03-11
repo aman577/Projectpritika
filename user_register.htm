@@ -146,7 +146,7 @@
     const namePattern = /^[A-Za-z]+$/;
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*(),.?":{}|<>])[A-Za-z\d!@#$%^&*(),.?":{}|<>]{8,}$/;
-    const phonePattern = /^(98|97|96)[0-9]{8}$/; // Phone number must start with 98, 97, or 96 and have 10 digits.
+    const phonePattern = /[0-9]{8}$/; // Phone number must start with 98, 97, or 96 and have 10 digits.
   
     // Get form fields
     const firstName = document.getElementById("first-name");
@@ -199,7 +199,7 @@
       if (phonePattern.test(phone.value)) {
         phoneError.textContent = "";
       } else {
-        phoneError.textContent = "Phone number must start with 98, 97, or 96 and of 10 digits.";
+        phoneError.textContent = "Phone number must be 10 digits.";
       }
     });
   
